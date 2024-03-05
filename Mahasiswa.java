@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Mahasiswa {
     public static List<Mahasiswa> listMahasiswa = new ArrayList<>();
-    1
     public String Nama;
     public String NIM;
     public String jurusan;
