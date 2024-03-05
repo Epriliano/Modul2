@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Mahasiswa {
     public static List<Mahasiswa> listMahasiswa = new ArrayList<>();
+    
     public String Nama;
     public String NIM;
     public String jurusan;
@@ -31,8 +32,8 @@ public class Mahasiswa {
         input.nextLine();
 
         switch (userRole) {
-            case "1" -> {
-                System.out.println("Masu1kkan Nama Mahasiswa: ");
+            case "1" : {
+                System.out.println("Masukkan Nama Mahasiswa: ");
                 String nama = input.nextLine();
 
                 System.out.println("Masukkan NIM Mahasiswa : ");
@@ -51,9 +52,9 @@ public class Mahasiswa {
                 listMahasiswa.add(mahasiswa);
                 System.out.println("Data mahasiswa berhasil ditambahkan.");
             }
-            case "2" -> tampilDataMahasiswa();
-            case "3" -> System.exit(0);
-            default -> {
+            case "2" : tampilDataMahasiswa();
+            case "3" : System.exit(0);
+            default : {
             }
         }
     }
